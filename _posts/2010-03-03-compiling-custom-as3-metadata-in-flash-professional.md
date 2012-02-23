@@ -3,7 +3,9 @@ layout: post
 title: Compiling custom AS3 metadata in Flash Professional
 created: 1267645901
 comments: true
+disqus_identifier: node/3 
 ---
+
 The use of custom metadata tags is becoming more commonplace in frameworks and libraries developed for the Flash platform. While many are targeted specifically for use with Flex and, by extension, the mxmlc compiler, others have uses outside of Flex. An example is [FlexUnit4][], which despite its name is easily used for testing&nbsp;AS3-only projects. Other testing frameworks that want to play nice with FlexUnit4, such as [mock-as3][] and [flex-mockito][], have incorporated custom metadata as well.
 
 The mxmlc compiler accepts custom metadata with a command line option: *keep-as3-metadata*. As of Flex Builder 3 (mxmlc 3.0), custom metadata can be integrated seamlessly, rendering the additional option unnecessary most of the time. However, if you aren't using the mxmlc compiler to compile your AS3 project, you may find that you also aren't able to use custom metadata. For example, if you attempt to compile a FlexUnit4 test case in Flash Professional, you encounter an unexpected error:
