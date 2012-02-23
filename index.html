@@ -8,6 +8,12 @@ title: patrickmowrer.com
 {% assign post_title = post.title %}
 {% assign post_url = post.url %}
 
+{% if post.disqus_identifier %}
+    {% assign post_disqus_identifier = post.disqus_identifier %}
+{% else %}
+    {% assign post_disqus_identifier = post.title %}
+{% endif %}
+
 <div class="indent">
     <div class="content">
         {% include post_header.html %}
@@ -17,8 +23,11 @@ title: patrickmowrer.com
     </div>
 
     {% include post_teaser.html %}
+
+    <div class="separator"></div>
+
 </div>
 
-<div class="separator"></div>
-
 {% endfor %}
+
+{% include disqus_comment_count.html %}

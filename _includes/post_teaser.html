@@ -1,13 +1,10 @@
 <div class="node-teaser-content">
     <div class="arrow comments inline">
-        <a href="/" class="comments" title="Jump to the comments of this posting.">
-            Comments
-        </a>
+        <a href="{{ post_url }}#disqus_thread" data-disqus-identifier="{{ post_disqus_identifier }}" class="comments" title="Jump to the comments of this posting.">Comments</a>
     </div>
-
     <div class="read-more-link">
         <h4>
-            <a href="{{ post.url }}" title="Continue reading \'{{ post.title }}\'">
+            <a href="{{ post_url }}" title="Continue reading \'{{ post_title }}\'">
                 Continue reading this post...
             </a>
         </h4>

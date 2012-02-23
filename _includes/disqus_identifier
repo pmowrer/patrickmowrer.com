@@ -1,0 +1,5 @@
+{% if page.disqus_identifier %}
+    {% assign disqus_identifier = page.disqus_identifier %}
+{% else %}
+    {% assign disqus_identifier = page.title %}
+{% endif %}
