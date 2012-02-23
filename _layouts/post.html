@@ -13,9 +13,9 @@ layout: default
         </p>
     </div>
 
-    <div class="separator"></div>
-
     {% if page.comments %}
+        <div class="separator"></div>
+
         {% if page.disqus_identifier %}
             {% assign disqus_identifier = page.disqus_identifier %}
         {% else %}

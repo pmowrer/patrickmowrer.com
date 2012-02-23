@@ -21,8 +21,8 @@ pre, code
 
 code
 {
-    background-color: #ededdd;
-    padding: 1px 5px;
+    font-size: 0.8125em;
+    line-height: 1.2em;
 }
 
 .copyright
@@ -30,15 +30,6 @@ code
    font-size: 0.75em;
    text-align: center;
 }
-
-#tinymce
-{
-    color:       #000;
-    font-size:   0.875em;
-    line-height:  1.5em;
-    padding-left: 5px;
-}
-
 
 /* Links
  * ------------------------------------------------------ */
@@ -197,6 +188,12 @@ table
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
 
+.highlight
+{
+    padding-left: 10px;
+}
+
+.highlight,
 blockquote, 
 textarea, 
 input[type="text"], 
