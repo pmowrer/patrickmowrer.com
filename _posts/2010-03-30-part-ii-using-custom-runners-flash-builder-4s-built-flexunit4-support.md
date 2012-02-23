@@ -10,4 +10,4 @@ Via asmock's [installation wiki](http://sourceforge.net/apps/mediawiki/asmock/in
 >Add the following to the "Additional compiler arguments" under "Flex Compiler" in your project properties:  
 >-includes asmock.integration.flexunit.ASMockClassRunner
 
-This way is probaby more straightforward than [using a custom FlexUnitApplication]({% post_url 2010-03-09-using-custom-runners-with-flash-builder-4s-built-in-flexunit4-support %}), at least as long as you're doing something simple.
+This way is probaby more straightforward than [using a custom FlexUnitApplication]({% post_url 2010-03-09-using-custom-runners-flash-builder-4s-built-flexunit4-support %}), at least as long as you're doing something simple.
