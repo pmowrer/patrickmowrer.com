@@ -4,47 +4,19 @@ title: patrickmowrer.com
 ---
 
 {% for post in site.posts limit:10 %}
+{% assign post_date = post.date %}
+{% assign post_title = post.title %}
+{% assign post_url = post.url %}
 
 <div class="indent">
     <div class="content">
-    <table class="date-plus-title-wrapper">
-        <tr>
-            <td class="arrow date valign-center">
-                <span>
-                    <strong>
-                        {{ post.date | date: '%e' }} {{ post.date | date: '%b' }}
-                    </strong>
-                    {{ post.date | date: '%Y' }}
-                </span>
-            </td>
-            <td class="valign-center">
-                <h2 class="title valign-center">
-                    <a href="/" title="{{ post.title }}">
-                        {{ post.title }}
-                    </a>
-                </h2>
-            </td>
-        </tr>
-    </table> 
-    <p>
-        {{ post.content | excerptfilter }}
-    </p>
-</div>
-
-<div class="node-teaser-content">
-    <div class="arrow comments inline">
-        <a href="/" class="comments" title="Jump to the comments of this posting.">
-            Comments
-        </a>
+        {% include post_header.html %}
+        <p>
+            {{ post.content | excerptfilter }}
+        </p>
     </div>
 
-    <div class="read-more-link">
-        <h4>
-            <a href="/" title="Continue reading \'{{ post.title }}\'">
-                Continue reading this post...
-            </a>
-        </h4>
-    </div> 
+    {% include post_teaser.html %}
 </div>
 
 <div class="separator"></div>

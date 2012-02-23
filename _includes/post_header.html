@@ -1,0 +1,23 @@
+<table class="date-plus-title-wrapper">
+    <tr>
+        <td class="arrow date valign-center">
+            <span>
+                <strong>
+                    {{ post_date | date: '%e' }} {{ post_date | date: '%b' }}
+                </strong>
+                {{ post_date | date: '%Y' }}
+            </span>
+        </td>
+        <td class="valign-center">
+            <h2 class="title valign-center">
+                {% if post_url %}
+                    <a href="{{ post_url }}" title="{{ post_title }}">
+                {% endif %}
+                    {{ post_title }}
+                {% if post_url %}
+                    </a>
+                {% endif %}
+            </h2>
+        </td>
+    </tr>
+</table> 

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% assign post_date = page.date %}
+{% assign post_title = page.title %}
+
+<div class="indent">
+    <div class="content">
+        {% include post_header.html %}
+        <p>
+            {{ content }}
+        </p>
+    </div>
+
+</div>
+
+<div class="separator"></div>

@@ -2,6 +2,7 @@
 layout: post
 title: Compiling custom AS3 metadata in Flash Professional
 created: 1267645901
+comments: true
 ---
 The use of custom metadata tags is becoming more commonplace in frameworks and libraries developed for the Flash platform. While many are targeted specifically for use with Flex and, by extension, the mxmlc compiler, others have uses outside of Flex. An example is [FlexUnit4][], which despite its name is easily used for testing&nbsp;AS3-only projects. Other testing frameworks that want to play nice with FlexUnit4, such as [mock-as3][] and [flex-mockito][], have incorporated custom metadata as well.
 
@@ -13,7 +14,7 @@ The Flash Pro compiler does support some metadata tags, like **SWF** and **Embed
 
 As far as I know, Flash Pro doesn't let you add command-line arguments to its compiler, but the good news is that there is a simple workaround to this problem, albeit a subtle one. By checking "**Export SWC**" in the "Publish Settings" dialog, all custom metadata is left alone during compilation.
 
-<img src="http://www.patrickmowrer.com/sites/patrickmowrer.com/files/images/export_swc.preview.png" alt="" height="104" width="555">
+<img src="/images/export_swc.preview.png" alt="" height="104" width="555">
 
 [FlexUnit4]: http://docs.flexunit.org/index.php?title=Main_Page "FlexUnit4"
 [mock-as3]: http://code.google.com/p/mock-as3/ "mock-as3"
