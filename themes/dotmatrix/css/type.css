@@ -1,0 +1,226 @@
+
+/* Copy
+----------------------------------------------------------------------------------------------------*/
+
+body, textarea, input, blockquote
+{
+    font:   1em/1.5em Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    color:  #333;
+}
+
+blockquote p
+{
+    font-size:   0.8125em;
+    line-height: 1.8em;
+}
+
+pre, code
+{
+   font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono" ,"Courier New", Courier, monospace;
+}
+
+code
+{
+    background-color: #ededdd;
+    padding: 1px 5px;
+}
+
+.copyright
+{
+   font-size: 0.75em;
+   text-align: center;
+}
+
+#tinymce
+{
+    color:       #000;
+    font-size:   0.875em;
+    line-height:  1.5em;
+    padding-left: 5px;
+}
+
+
+/* Links
+ * ------------------------------------------------------ */
+
+a
+{
+   color: #7e2c2c;  
+
+   -webkit-border-radius: 5px;
+   -moz-border-radius:    5px;
+   border-radius:         5px;
+}
+
+a:visited
+{
+    color: #6b5757;  
+}
+
+a:hover
+{
+    background:      none repeat scroll 0 0 #7e2c2c;
+    color:           #fff;
+    text-decoration: none;
+}
+
+p a, li a
+{
+    padding: 3px;
+}
+
+legend a:hover
+{
+    color: #7e2c2c;
+}
+
+a.img:hover
+{
+    background:      none;
+    text-decoration: none;
+}
+
+/* Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Franklin Gothic Medium", "Helvetica Nue", "Arial Narrow Bold", Arial, sans-serif;
+    color: #7e2c2c;
+}
+
+h1 a, h2 a, h3 a, h4 a
+{
+   text-decoration: none;
+}
+
+h1 
+{
+  font-size:    2em;
+  line-height:  1.1875;
+}
+
+h2 
+{
+  font-size:    1.75em;
+  line-height:  1.22em;
+}
+
+h3 
+{
+  font-size:    1.5em;
+  line-height:  1.25em;
+}
+
+h4 
+{
+  font-size: 1.1875em;
+}
+
+h5 
+{
+  font-size: 1.0625em;
+}
+
+h6 
+{
+  font-size: 0.9375em;
+}
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol 
+{
+    list-style: decimal;
+}
+
+ul 
+{
+    list-style: disc;
+}
+
+ol, ul
+{
+    margin-left: 2em;
+    margin-top:  1.5em;
+}
+
+li
+{
+    margin-bottom: 0.5em;   
+}
+
+ul li ul
+{
+    margin-bottom: 1em;
+}
+
+
+li ul
+{
+    list-style: circle;
+}
+ 
+blockquote
+{
+    margin-top:     0.5em;
+    margin-bottom:  1.25em;
+    margin-left:    0.625em;
+}
+
+p, 
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+address,
+fieldset
+{
+    margin-top:    1em;
+    margin-bottom: 0.5em;
+}
+
+table
+{
+    margin: 0;
+}
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+
+blockquote, 
+textarea, 
+input[type="text"], 
+input[type="password"] 
+{
+    background-color: #f7f7ed;
+    border:           1px dashed #ccc;
+}
+
+textarea,
+input[type="text"],
+input[type="password"]
+{
+    width: 80%;
+    padding: 8px 12px;
+}
+
+blockquote
+{
+    padding: 2px 8px;
+}
+
+textarea:focus
+{
+   border: 1px solid #5a0202;
+}
+

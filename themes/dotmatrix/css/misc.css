@@ -1,0 +1,16 @@
+
+/* 
+----------------------------------------------------------------------------------------------------*/
+
+.hidden 
+{
+    display: none;
+}
+
+
+.valign-center
+{
+    vertical-align: middle;  
+    display: table-cell;   
+}
+

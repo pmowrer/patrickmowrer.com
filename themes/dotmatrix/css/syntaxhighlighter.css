@@ -1,0 +1,37 @@
+
+/* Overriding some syntaxhighlighter styles
+----------------------------------------------------------------------------------------------------*/
+
+.syntaxhighlighter
+{
+   padding: 10px 1px !important;
+}
+
+.syntaxhighlighter .line .number 
+{
+   width: 1.5em !important;
+}
+
+.syntaxhighlighter .line .number code 
+{
+   padding-right: 0.5em !important;
+   width:         1.1em !important;
+}
+
+.syntaxhighlighter .line .content 
+{
+   padding-left: 1em !important;
+}
+
+.syntaxhighlighter, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody 
+{
+   font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono" ,"Courier New", Courier, monospace !important;
+   font-size:   13px !important;
+   line-height: 22px !important;
+}
+
+.syntaxhighlighter a:hover
+{
+    background:      none;
+    text-decoration: none;
+}

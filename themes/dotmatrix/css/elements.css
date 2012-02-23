@@ -1,0 +1,208 @@
+/* Node
+ * ------------------------------------------------------ */
+
+.node-teaser-content
+{
+    margin-top: 2em;
+}
+
+.read-more-link
+{
+    height: 41px; /* Match arrow height */
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 0.5em;
+}
+
+.read-more-link *
+{
+    margin: 0;
+}
+
+/* Separator
+ * ------------------------------------------------------ */
+
+.separator
+{
+    position: relative;
+    background: url(../images/content_separator.png) bottom no-repeat;
+    width: 691px;
+    min-height: 40px;
+    margin: 25px 0px;
+    margin-left: -60px;
+}
+
+
+/* Buttons
+ * ------------------------------------------------------ */
+
+ul.links
+{
+    margin-top: 3em;
+}
+
+.links a
+{
+   padding: 5px;
+   border: 1px solid #e3e3e3;
+   text-decoration: none;
+   
+   -moz-border-radius:    4px;
+   -webkit-border-radius: 4px;
+   border-radius:         4px;
+}
+
+.button
+{
+   font-family: "Franklin Gothic Medium", "Helvetica Nue", "Arial Narrow Bold", Arial, sans-serif;
+   font-size: 18px;
+   text-decoration: none;
+   color: #6b5757;
+   
+   height:      41px;
+   line-height: 41px;
+}
+
+.button.comment
+{
+   float:   left;
+   display: block;
+   
+   background:  url(../images/button_comment.png) no-repeat 0 0;
+   padding-left: 49px;
+}
+
+/* Term buttons
+ * ------------------------------------------------------ */
+
+div.terms-wrapper
+{ 
+   overflow: hidden;
+   width: 100%;
+   clear: both;
+   margin-bottom: 1em;
+}
+
+.term-button
+{
+   float:   left;
+   display: block;
+   
+   background:  url(../images/button_term.png) no-repeat 0 0;
+   height:      47px;
+   line-height: 47px;
+
+   padding-left: 3px;
+   margin-right: 15px;
+}
+
+.term-button a, .term-button span
+{
+   background: transparent url(../images/button_term.png) no-repeat top right;
+   display: block;
+   padding: 0px 20px 0px;
+
+   text-decoration: none;
+   font-family: "Franklin Gothic Medium", "Helvetica Nue", "Arial Narrow Bold", Arial, sans-serif;
+   font-size: 18px;
+   color: #6b5757;
+}
+
+.term-button.short
+{
+   background:  url(../images/button_term_short.png) no-repeat 0 0;
+   height:      33px;
+   line-height: 33px;
+}
+
+.term-button.short a
+{
+   background: url(../images/button_term_short.png) no-repeat top right;
+   font-size:   14px;
+}
+
+h2.term-button
+{
+   font-size: 28px;
+}
+
+a.term-button:visited 
+{
+    color: #6b5757;
+}
+
+a.term-button:hover, a.term-button:visited:hover
+{
+   color: #7e2c2c;
+}
+
+/* Arrows
+ * ------------------------------------------------------ */
+
+.arrow
+{
+    width: 132px;
+    height: 41px;
+}
+
+.arrow, .arrow a
+{
+    color:       #fff;
+    font-size:   13px;
+    font-weight: bold;
+    line-height: 41px;
+}
+
+.arrow a
+{
+    text-decoration: none;
+    padding: 10px; /* Large to make clickable link area greater. */
+}
+
+.arrow a:hover
+{
+    color: #fe0;
+    background: none;
+}
+
+.arrow strong
+{
+    font-size: 16px;
+}
+
+.arrow.date
+{
+    background: url(../images/arrow_date.png) no-repeat left center;
+}   
+
+.arrow span
+{
+   padding-left: 10px;
+}
+
+.arrow.comments
+{
+    position: relative;
+    margin-left: -135px;
+    
+    font-size: 13px;
+    background: url(../images/arrow_comment.png) no-repeat left center;
+}
+
+.arrow.comments.inline
+{
+    float: left;
+}
+
+.date-plus-title-wrapper
+{
+    position: relative;
+    width: 700px;
+    margin-left: -140px;
+    margin-bottom: 0.5em;
+
+    /* Cell spacing */
+    border-collapse:separate;
+    border-spacing: 0.3em 0em;
+}
+
