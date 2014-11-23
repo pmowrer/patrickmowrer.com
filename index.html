@@ -1,33 +1,20 @@
 ---
 layout: default
-title: patrickmowrer.com
 ---
 
-{% for post in site.posts limit:10 %}
-{% assign post_date = post.date %}
-{% assign post_title = post.title %}
-{% assign post_url = post.url %}
+<div class="home">
 
-{% if post.disqus_identifier %}
-    {% assign post_disqus_identifier = post.disqus_identifier %}
-{% else %}
-    {% assign post_disqus_identifier = post.title %}
-{% endif %}
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <h3 class="h2 post-title">{{ post.title }}</h3>
+          <p class="post-summary">{{ post.summary }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
 
-<div class="indent">
-    <div class="content">
-        {% include post_header.html %}
-        <p>
-            {{ post.content | excerptfilter }}
-        </p>
-    </div>
-
-    {% include post_teaser.html %}
-
-    <div class="separator"></div>
-
+  {% include pagination.html %}
 </div>
-
-{% endfor %}
-
-{% include disqus_comment_count.html %}

@@ -1,5 +1,33 @@
-pygments: true
-permalink: /:year/:month/:day/:title
-name: patrickmowrer.com
+# Site settings
+title:       patrickmowrer.com
+email:       
+author:      Patrick Mowrer
 description: 
-url: http://patrickmowrer.com
+baseurl:     ""
+url:         http://patrickmowrer.com
+permalink:   /:year/:month/:day/:title
+
+# Google analytics
+google_analytics: UA-11923307-2
+
+# Optional features
+animated:           true
+show_related_posts: false
+show_post_footers:  false
+
+# Social icons
+show_social_icons:  true
+github_username:    pmowrer
+twitter_username:   stiggler
+google_plus_id:
+linkedin_username:  patrickmowrer
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Build settings
+markdown:     kramdown
+permalink:    pretty
+paginate:     3
+sass:
+  compressed: true
