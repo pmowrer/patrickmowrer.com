@@ -13,7 +13,6 @@ google_analytics: UA-11923307-2
 # Optional features
 animated:           true
 show_related_posts: false
-show_post_footers:  false
 
 # Social icons
 show_social_icons:  true
