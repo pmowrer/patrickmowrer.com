@@ -10,6 +10,9 @@ permalink:   /:year/:month/:day/:title
 # Google analytics
 google_analytics: UA-11923307-2
 
+# Disqus
+disqus_shortname: patrickmowrer
+
 # Optional features
 animated:           true
 show_related_posts: false

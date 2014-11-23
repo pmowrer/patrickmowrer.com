@@ -1,8 +1,15 @@
+{% comment %} Support custom (legacy) Disqus identifiers via page.disqus_identifier {% endcomment %}
+{% if page.disqus_identifier %}
+    {% assign disqus_identifier = page.disqus_identifier %}
+{% else %}
+    {% assign disqus_identifier = page.title %}
+{% endif %}
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'patrickmowrer';
-    var disqus_identifier = "{{ disqus_identifier }}";
+    var disqus_shortname = '{{ site.disqus_shortname }}';
+    var disqus_identifier = '{{ disqus_identifier }}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -12,4 +19,3 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
