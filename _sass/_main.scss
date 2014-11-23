@@ -224,15 +224,20 @@ code {
 
 pre {
   padding: 1.125em;
-  font-size: 1.125rem;
-  line-height: 1.11;
+  font-size: 1rem;
+  line-height: 1.4;
   overflow-x: scroll;
   margin-bottom: 0.88em;
 }
 
-.highlight .p {
-  font-size: 1.125rem;
-  line-height: 1;
+.highlight {
+  border-radius: 4px;
+  opacity: 0.98;
+
+  .p {
+    font-size: 1.125rem;
+    line-height: 1;
+  }
 }
 
 blockquote {
