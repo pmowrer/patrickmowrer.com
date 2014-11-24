@@ -13,6 +13,9 @@ google_analytics: UA-11923307-2
 # Disqus
 disqus_shortname: patrickmowrer
 
+# RSS
+feed_url: http://feeds.feedburner.com/patrickmowrercom
+
 # Optional features
 animated:           true
 show_related_posts: false

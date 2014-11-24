@@ -18,6 +18,11 @@
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
+    {% if site.feed_url %}
+      <!-- RSS -->
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.feed_url }}">
+    {% endif %}
+
     <!-- Open Graph -->
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
